@@ -1,0 +1,16 @@
+version: '2.3'
+services:
+  jupyter:
+    build: .
+    image: nishika-bookmark
+    container_name: nishika-bookmark-jupyter
+    working_dir: /analysis
+    volumes:
+      - ./:/analysis
+      - ${DATA_DIR}:/analysis/input
+    ports:
+      - ${JUPYTER_PORT}:8888
+      - ${INTERPRET_PORT}:7125
+    environment:
+      - VIVID_PROJECT_ROOT=/analysis/input/
+      - PYTHONPATH=/analysis

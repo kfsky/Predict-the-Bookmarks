@@ -1,0 +1,22 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+.DS_Store
+
+input/*
+!.gitkeep
+
+output/*
+!.gitkeep
+
+submission/*
+!.gitkeep
+
+img.png
+img_1.png
+
+add_data/*
+!.gitignore
+
+src/catboost_info
+src/mypipe/models/__pycache__
